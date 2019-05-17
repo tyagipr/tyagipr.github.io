@@ -1,129 +1,174 @@
 <html>
-        <head>
-                <link rel="stylesheet" href="web.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                <script href="action.js"></script>
-        </head>
-        <body >
-                <img src="background.jpg" alt="background" class="background"/>
-                <i class="fa fa-paper-plane" aria-hidden="true" style="font-size:36px;color:#94eebb;"></i><p style="position:absolute; left:150px; top:50px; font-family: Helvetica; color:#94eebb;font-size: 28px;">fly high</p>
-                
-                <div class="topnav">
-                        <a class="active" href="#home">Home</a>
-                        <a href="#About">About</a>
-                        <a href="#Qualification">Projects</a>
-                        <a href="#Contact">Contact</a>
-                </div>
-                
-                <div id="About" class="container-fluid">
-                        <h1>About Me</h1>
-                        <br/>
-                        <img src="about.jpg" alt="about" class="about" />
-                        <div class="Frontend">
-                                <h3 style="font-size:30px"; "font-family:Helvetica";>Frontend</h3>
-                                <p style="font-size: 20px";>HTML, CSS, JavaScript, Bootstrap, ReactJS</p>
-                        </div>
-                        <div class="backend">
-                                <h3 style="font-size:30px"; "font-family:Helvetica";>Backend</h3>
-                                <p style="font-size: 20px";>MySQL, NodeJS </p>
-                        </div>
-                        <div class="Languages">
-                                <h3 style="font-size:30px"; "font-family:Helvetica";>Languages</h3>
-                                <p style="font-size: 20px";>C, C++, Python, Core Java</p>
-                        </div>                
-                        <input type="button" onclick="location.href='Resume.pdf';" value="Download CV" class="ghost-button2" download/> 
-                        
-                </div>
-                <div id="Qualification" class="container-fluid">
-                        <h1>Projects</h1>
-                        
-                        <img src="project1.jpg" alt="about" class="project1" />
-                        <img src="project2.jpg" alt="about" class="project2" />
-                        <img src="project3.jpg" alt="about" class="project3" />
-                        <input type="button" onclick="location.href='Index.html';" value="Project Link" class="button-project"/>
-                        
-                </div>
-                <div id="Contact" class="container-fluid">
-                        <h1>Contact</h1>
-                        <p style="font-size:25px ; font-family:Helvetica; position: absolute; top: 2250; left: 240; text-decoration: none;">Address Info</p>
-                        <i class="fa fa-map-marker" aria-hidden="true" style = "position: absolute; top: 2300; left: 190; color:#94eebb;font-size:24px;"></i>
-                        <p style="position: absolute; top: 2300; left: 220; text-decoration: none; font-size:18px ; font-family:Helvetica;">Near Malkhan Singh Chowk,<br>Deoband ,UP - 254774
-                        </p><br>
-                        <i class="fa fa-phone" aria-hidden="true"  style = "position: absolute; top: 2360; left: 190; color:#94eebb;font-size:24px;"></i>
-                        <p style="position: absolute; top: 2360; left: 230; text-decoration: none; font-size:18px ; font-family:Helvetica;">+91 9557866085
-                        </p><br>
-                        <i class="fa fa-envelope" aria-hidden="true" style = "position: absolute; top: 2420; left: 190; color:#94eebb;font-size:18px;"></i>
-                        <p style="position: absolute; top: 2415; left: 230; text-decoration: none; font-size:18px ; font-family:Helvetica;">tyagipragya99@gmail.com
-                        </p>
-
-                        <img src="map.png" alt="map" name="map" width="25%" height="45%"></img>
-
-                        <div>
-                                <h3 style="font-size:25px ; font-family:Helvetica; position: absolute; top: 2230; left: 1000; text-decoration: none;">Get In Touch</h3>
-                                <form name='registration' onSubmit="return formValidation();">
-                                        <i class="fa fa-user" aria-hidden="true" style = "position: absolute; top: 2300; left: 970; color:#94eebb;font-size:24px;" ></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2300; left: 1000; text-decoration: none;">Name</p><input type="text" name="username" style="position: absolute; top: 2300; left: 1090; border-radius: 5px; border:1px solid black; height:5%; width: 20%;">
-                                        
-                                        <i class="fa fa-envelope" aria-hidden="true" style = "position: absolute; top: 2365; left: 970; color:#94eebb;font-size:18px;"></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2360; left: 1000; text-decoration: none;">E-Mail</p><input type="text" name="email" style="position: absolute; top: 2360; left: 1090; border-radius: 5px; border:1px solid black; height:5%; width: 20%;">
-
-                                        <i class="fa fa-pencil-square-o" aria-hidden="true" style="position:absolute; top:2425; left:970;color:#94eebb; font-size: 18px; "></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2420; left: 1000; text-decoration: none;">Message</p><input type="text" name="message" style="position: absolute; top: 2420; left: 1090; border-radius: 5px; border:1px solid black; height:15%; width: 20%;">
-
-                                        <Button type="Submit" onClick="myFunction()"  style="position:absolute; top:2550; left:1300; padding: 8px 12px;border-radius:10px; border:1px solid black; background-color:#94eebb ">Submit</Button>
-                                </form>
-
-                        </div>
-                </div> 
-                <div id="Quote" class="container-fluid">
-                        <!-- <h2>Hire Me</h2> -->
-                        <input type="button" onclick="location.href='Index.html';" value="Hire Me" class="ghost-button3"/>
-                        <i class="fa fa-linkedin-square" aria-hidden="true" style="color: #0077B5; font-size: 36px; position: absolute; left: 550px; top: 2900px;"></i>
-
-                        <i class="fa fa-facebook-square" aria-hidden="true" style="color: #3C5A99; font-size: 36px; position: absolute; left: 650px; top: 2900px;"></i>
-
-                        <i class="fa fa-google-plus-square" aria-hidden="true" style="color: #db4a39; font-size: 36px; position: absolute; left: 750px; top: 2900px;"></i>
-
-                        <i class="fa fa-twitter-square" aria-hidden="true" style="color: #1DA1F2; font-size: 36px; position: absolute; left: 850px; top: 2900px;"></i>
-
-                        <i class="fa fa-pinterest-p" aria-hidden="true" style="color: #c8232c; font-size: 36px; position: absolute; left: 950px; top: 2900px;"></i>
-                </div>     
-                
+    <head>
+        <link rel="stylesheet" href="web.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="action.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script>
+        <script src="/path/to/jquery.flip.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <script>
+                $(function() { new TypeIt('#Projects', {
+                        strings: ["Projects"],
+                        speed: 500,
+                        breakLines: false,
+                        waitUntilVisible: true
+                }).go(); });
+        </script>
+        <script>  $(function() { new TypeIt('#Skillset', {
+                        strings: ["Skillset"],
+                        speed: 500,
+                        breakLines: false,
+                        waitUntilVisible: true
+                })
+                .pause(200)
+                .go(); });
+        </script>
+        <script>  $(function() { new TypeIt('#experience', {
+                strings: ["Experience"],
+                speed: 500,
+                breakLines: false,
+                waitUntilVisible: true
+        })
+        .pause(220)
+        .go(); });
+        </script>
+        
+        <script>
+            $(function(){
+                $(".flip").flip({
+                    trigger: 'hover'
+                });
+            });
+        </script>
+    </head>
+    <body >
             
-                <div class="intro">
-                
-                        <h2 class="welcome">Welcome to my Website</h2>
-                        <p class="name">I am</p><br><p class="name1"> Pragya Tyagi</p><br/><p class="name2">I am a software             Developer
-                        </p>
-                        <br/>
-                        
-                        <input type="button" onclick="location.href='http://www.github.com/tyagipr';" value="Github" class="ghost-button"/>
-                        
-                        <div class="container">
-  
-                                <!-- Trigger the modal with a button -->
-                                <button type="button" class="ghost-button1" data-toggle="modal" data-target="#myModal">Read More</button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="myModal" role="dialog">
-                                        <div class="modal-dialog">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                        <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                <!-- <h4 class="modal-title">Modal Header</h4> -->
-                                                                <div>
-                                                                        <img src="Pragya1.jpg" alt="img" class="img"/>
-                                                                        <p class="card" >Myself Pragya Tyagi.
-                                                                        I am a MCA Post-graduate student at Vellore Institute of technology, Chennai.
-                                                                        I am a Confident, hard-working, extrovert, friendly person.
-                                                                        I usually work as a Frontend and backend developer, but I am also intrested in learning new technologies.
-                                                                        </p>
-                                                                </div>        
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
+            
+        <!-- Front Page    -->
+
+            <section id="section03" class="demo">
+                                            
+                    <div class="main">
+                    <div class="header">
+                            <div class="left">
+                                <img src="Pragya1.jpg" />
+                            </div>
+                            <div class="right">
+                                <h3>Pragya Tyagi</h3>
+                                <h4>Frontend Developer | Blogger | Quick Learner | Programmer</h4>
+                                
+                            </div>
+                            <div class="content"><i class="fa fa-quote-left"></i> Hola! <br>
+                            I am Pragya, I am a frontend developer, on the way to become a fullstack developer. I am a nature lover, fitness freak, love playing badminton. I like taking challenges and thinking out of the box. I am a dedicated person when it comes to my work.<i class="fa fa-quote-right"></i>
+                            </div>
                         </div>
+                    </div>
+                    <a href="#section04"><span></span>Know More</a>
+            </section>
+
+            <!-- Projects -->
+            <section id="section04" class="demo1">
+                    <div id="Projects"></div>
+
+                        <div class="Project1" data-aos="zoom-in"><h2><b>Student Performance Prediction for DIGIMARK</b></h2>
+                                <div>DIGIMARK is a web application for conducting digital assignment, then dataset is extracted from this application which contains student performance and their personal details, which will further used for predict their future performance using machine learning algorithms.</div>
+                        </div> 
+                    
+                        <div class="Project2" data-aos="zoom-in"><h2><b>YouTube WebApplication Using ReactJS</b></h2>
+                                <div>This Application uses Youtube Api to fetch results on searching...It also contains the video link to navigate it to new page using react router</div>
+                        </div> 
+                    
+                        <div class="Project3" data-aos="zoom-in"><h2><b>RestAPI for a new patient registration using SQLite, Swagger, ExpressJs, Sequelize</b></h2>
+                            <div>This API collects the data of patient's registration and save them in the database SQLite, sequelize and swaggger is used for UI and mapping purpose.
+                            </div>
+                    </div> 
+            </section>
+
+            <!-- SkillSet -->
+            
+            <div class="background">
+                <div id = "skillset"></div>
+                <div class="row1">
+                    <div class="flip"> 
+                        <div class="front"> 
+                            <img src="javascript.png" alt="javascript" />
+                        </div> 
+                        <div class="back">
+                            <h3 class="javascript">80%</h3>
+                        </div> 
+                    </div>
+                    <div class="flip"> 
+                        <div class="front"> 
+                            <img src="c++.png" alt="cplus" />
+                        </div> 
+                        <div class="back">
+                            <h3 class="cplus">80%</h3>
+                        </div> 
+                    </div>
+                    <div class="flip"> 
+                        <div class="front"> 
+                            <img src="python.png" alt="python" />
+                        </div> 
+                        <div class="back">
+                            <h3 class="python">60%</h3>
+                        </div> 
+                    </div>
+                    <div class="flip"> 
+                        <div class="front"> 
+                            <img src="react.png" alt="react" />
+                        </div> 
+                        <div class="back">
+                            <h3 class="react">80%</h3>
+                        </div> 
+                    </div>
+                    <div class="flip"> 
+                        <div class="front"> 
+                            <img src="mysqli.png" alt="react" />
+                        </div> 
+                        <div class="back">
+                            <h3 class="mongo">50%</h3>
+                        </div> 
+                    </div>
+            </div>
+
+            <!-- Experience -->
+
+            <div id="section05" class="demo1">
+                <div id = "Experience"></div>
+                <div class="main1"  data-aos="zoom-in">
+                    <div class="header">
+                            <div class="left">
+                                <img src="innovaccer.png" class="img1"/>
+                            </div>
+                            <div class="right1">
+                                <h3>Pragya Tyagi</h3>
+                                <h4>Frontend Intern(May 2018 - July 2018)</h4>
+                            </div>
+                    </div>
+                    <div class="content1"><i class="fa fa-quote-left"></i>
+                        Work on JavaScript and ReactJs ,Build a web application using youtube API in reactJS.<i class="fa fa-quote-right"></i>
+                    </div>
                 </div>
-        </body>
+                <input type="button" onclick="location.href='Resume.pdf';" value="Download CV" class="download_CV" download/>       
+            </div>
+
+            <!-- Contact Info -->
+            <div class="info">
+                <a href="https://www.linkedin.com/in/pragya-tyagi-655705157/"><i class="fa fa-linkedin-square" style="font-size:24px;" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Pragya38651076"><i class="fa fa-twitter" style="font-size:24px;" aria-hidden="true"></i></a> 
+                <a href="http://www.github.com/tyagipr"><i class="fa fa-github" style="font-size:24px;" aria-hidden="true"></i></a>
+                <div>created by Pragya Tyagi</div>
+            </div>
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>     
+    </body>
 </html>
